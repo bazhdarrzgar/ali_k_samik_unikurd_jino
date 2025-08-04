@@ -355,15 +355,15 @@ const ConverterSection = ({
       </div>
 
       {/* Sample Texts */}
-      <Card className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : ''}`}>
-        <CardHeader>
-          <CardTitle className={`flex items-center gap-2 ${isDarkMode ? 'text-white' : ''}`}>
-            <BookOpen className="h-5 w-5" />
-            Quick Test Samples
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+              <Card className={`${isDarkMode ? 'bg-gray-800 border-gray-700' : ''}`}>
+          <CardHeader>
+            <CardTitle className={`flex items-center gap-2 ${isDarkMode ? 'text-white' : ''}`}>
+              <BookOpen className="h-5 w-5" />
+              Quick Test Samples
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {sampleTexts.map((sample, index) => (
               <Button
                 key={index}
@@ -575,7 +575,7 @@ const ConverterSection = ({
               </div>
             ))}
           </div>
-          <div className="mt-4 p-3 bg-blue-50 rounded border border-blue-200">
+                      <div className="mt-4 p-3 bg-blue-50 rounded border border-blue-200">
             <div className="text-sm font-medium text-blue-800 mb-2">Complex Diacritical Combinations:</div>
             <div className="text-sm text-blue-700">
               Blue highlighted mappings show complex patterns with diacritics that are processed first for accurate conversion.
@@ -779,10 +779,10 @@ export default function ArabicToKurdishConverter() {
                 <CardDescription>Your recent conversions from both Pro and Standard converters (auto-saved)</CardDescription>
               </CardHeader>
               <CardContent>
-                {conversionHistory.length > 0 ? (
-                  <div className="space-y-4 max-h-96 overflow-y-auto">
-                    {conversionHistory.map((entry) => (
-                      <div key={entry.id} className={`p-4 border rounded-lg ${isDarkMode ? 'border-gray-600' : ''}`}>
+                                  {conversionHistory.length > 0 ? (
+                    <div className="space-y-4 max-h-96 overflow-y-auto">
+                                          {conversionHistory.map((entry) => (
+                        <div key={entry.id} className={`p-4 border rounded-lg ${isDarkMode ? 'border-gray-600' : ''}`}>
                         <div className="flex justify-between items-center mb-3">
                           <Badge variant={entry.mappingType === 'standard' ? 'secondary' : 'default'}>
                             {entry.mappingType === 'standard' ? 'Standard' : 'Pro'} Version
